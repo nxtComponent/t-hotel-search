@@ -741,6 +741,7 @@ The form handles below mentioned scenarios on its own.
         this.$.needRoom.textContent = "1 Adult in 1 Room";
         var pCard = Polymer.dom(this.$.paperCard).node;
         pCard.style.display = 'block';
+        pCard.style.top = this.$.deskinput1.getBoundingClientRect().bottom+'px'; // Set dynamic top position
 
         if (this.showTravellersCard == true) {
           this.showTravellersCard = !this.showTravellersCard
